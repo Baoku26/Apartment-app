@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Apartment</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		
+
+		<header>
+			<div class="container">
+				<h1 class="logo">NEBO</h1>
+
+				<nav class="navigation">
+					<a href="#" class="hide-desktop
+					">
+						<img src="./images/menu.svg" alt="menu" class="menu" id="menu" width="17px">
+					</a>
+
+					<ul class="show-desktop hide-mobile" id="nav">
+						<li id="exit"  class="exit-btn hide-desktop"><img src="./images/exit.svg" width="17px"></li>
+						<li><a href="#">home</a></li>
+						<li><a href="#">services</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="apt-no">
+					<p>APARTMENT</p>
+					<p class="sub"><span>NO.</span>250</p>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<img src="./images/house.jpg" class="background-img" alt="house pic" >
+
+			<section class="info">
+				<div class="content2">
+					<img src="./images/blueprint.png"  alt="floorplan" >
+
+					<div class="text">
+						<div class="text-1">
+							<figure>
+								<h1>2</h1>
+								<figcaption>years</figcaption>
+							</figure>
+
+							<figure>
+								<h1>5</h1>
+								<figcaption>months</figcaption>
+							</figure>
+
+							<figure>
+								<h1>120</h1>
+								<figcaption>days</figcaption>
+							</figure>
+						</div>
+
+						<div class="text-2">
+							<p>Lorem ipsum </p>
+
+							<p>Lorem ipsum dolor sit amet</p>
+
+							<p>Lorem ipsum dolor sit amet, consec</p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur</p>
+
+							<p>Lorem ipsum </p>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="images">
+				<div class="imagess">
+					<img src="./images/bathroom.jpg" alt="bathroom">
+				
+					<img src="./images/bedroom.jpg" alt="bedroom">
+				</div>
+
+				<div class="imagess">
+					<img src="./images/livingroom.jpg" alt="livingroom">
+
+					<img src="./images/kitchen1.jpg" alt="kitchen">
+				</div>
+			</div>
+
+			<div class="last-sec">
+
+				<div class="footer">
+					<p>SIGN UP FOR VIEWING</p>
+					<form class="form1">
+						<div>
+							<input type="text" name="Name" placeholder="Name">
+						</div>
+
+						<div>
+							<input type="email" name="E-mail" placeholder="E-mail">
+						</div>
+					</form>
+
+					<div class="policy">
+						<a href="#">Terms of sercives and Privacy policy</a>
+					</div>
+
+					<button class="btn">signup</button>
+				</div>
+
+			</div>
+		</main> 
+
+		<script type="text/javascript">
+			
+			var menu = document.getElementById('menu')
+			var nav = document.getElementById('nav')
+			var exit = document.getElementById('exit')
+
+			menu.addEventListener('click', function(e) {
+				nav.classList.toggle('hide-mobile');
+				e.preventDefault();
+			});
+
+			exit.addEventListener('click', function(e) {
+				nav.classList.add('hide-mobile');
+				e.preventDefault();
+			});
+
+		</script>
+	</body>
+</html>

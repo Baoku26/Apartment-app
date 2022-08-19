@@ -1,0 +1,335 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.logo{
+	color: white;
+	font-weight: lighter;
+	font-family: Morpheus;
+	position: absolute;
+	padding: .2em .3em;
+	width: 40px;
+	letter-spacing: 2px;
+}
+
+.apt-no{
+	position: absolute;
+	z-index: 3;
+	color: white;
+	text-align: right;
+	margin-top: 25%;
+	margin-left: 30%;
+}
+
+.apt-no p{
+	font-family: Monopoly;
+	font-size: 30px;
+	/*font-weight: bold;*/
+}
+
+.apt-no span{
+	font-size: 20px;
+}
+
+.menu{
+	padding: 0 .5em;
+	position: absolute;
+	right: 0;
+	list-style: none;
+}
+
+.background-img{
+	width: 100%;
+}
+.hide-mobile{
+	display: none;
+	/*list-style: none;*/
+}
+
+.navigation ul li{
+	list-style: none;
+}
+
+
+.menu{
+	margin-top: 1em;
+
+}
+
+.info{
+	background-color: aliceblue;
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+.content2{
+
+	margin: 0 1em;
+}
+
+.content2 img{
+	width: 100%;
+}
+
+.text-1{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid black;
+	padding: 1em 3em;
+}
+
+.text-1 figure h1{
+	font-size: 40px;
+	
+}
+
+.text-2{
+	margin: 5% 0;
+	font-family: roboto;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: lighter;
+}
+
+.images{
+	margin: 3% 5%;
+}
+
+.images img{
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+.last-sec{
+	text-align: center;
+	background-color: aliceblue;
+	padding: 20% 0;
+}
+
+.footer p{
+
+	font-style: roboto;
+	width: 100%;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 5%;
+
+}
+.form1 input{
+	border: none;
+	background-color: aliceblue;
+	border-bottom: 1px black solid;
+	width: 220px;
+	padding: 2% 0;
+	margin-bottom: 5%;
+}
+
+.policy a{
+	color: black;
+	text-decoration: none;
+}
+
+.btn{
+	padding: 2% 20%;
+	border: 1px black solid;
+	background-color: white;
+	margin-top: 5%;
+}
+
+.navigation ul{
+	position: fixed;
+	width: 50%;
+	right: 0;
+	text-align: left;
+	background-color: #23424A;
+	height: 100%;
+	z-index: 7;
+	padding-top: 3em;
+}
+
+.navigation ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	padding: 1.5em 2em;
+	font-size: 20px;
+	background-color: #23444c;
+	float: left;
+}
+
+.navigation ul li a:hover{
+	background-color: #23424A;
+}
+
+.exit-btn{
+	margin-bottom: 1em;
+	margin-top: -1.3em;
+	text-align: right;
+	padding: 0 1.4em;
+}
+
+.exit-btn img{
+	cursor: pointer;
+}
+
+@media (min-width: 650px) {
+	.content2{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	.content2 img{
+		width: 60%;
+	}
+
+	.text{
+		display: block;
+		width: 30%;
+
+	}
+
+	.text-1{
+		border: none;
+		text-align: left;
+		padding: 0;
+	}
+
+	.text-2{
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.apt-no{
+		margin-top: 27%;
+		font-size: 40px;
+	}
+
+	.form1 input{
+		width: 400px;
+	}
+
+	.btn{
+		padding: 2% 15%;
+	}
+}
+
+@media (min-width: 800px){
+	.logo{
+		padding: .4em 2.5em;
+	}
+
+	.imagess{
+		display: block;
+	}
+
+	.images{
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+		align-items: center;
+		justify-content: space-between;
+		z-index: 4;
+		margin-bottom: 0;
+		margin: 0 10%;
+	}
+
+	.images img{
+		width: 95%;
+		/*margin: 0 2%;*/
+		margin: 1em 0;
+	}
+
+	.apt-no{
+		margin-top: 25%;
+		font-weight: light;
+		text-align: right;
+		
+	}
+
+	.apt-no p{
+		font-size: 60px;
+		font-weight: lighter;
+	}
+
+	.content2{
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+		margin: 0 5em;
+	}
+
+	.content2 img{
+		width: 40%;
+	}
+
+	.text{
+		width: 60%;
+	}
+
+	.text-1{
+		width: 55%;
+		border-bottom: 1px gray solid;
+		padding-bottom: .5em;
+	}
+
+	.text-2{
+		font-size: 22px;
+		line-height: 35px;
+	}
+
+	.last-sec{
+		padding: 7% 0;
+	}
+
+	.footer{
+		width: 60%;
+		margin-left: 20%;
+	}
+
+	.show-desktop{
+		display: block;
+		margin-right: 5%;
+	}
+
+	.hide-desktop{
+		display: none;
+	}
+
+	.navigation ul{
+		position: absolute;
+		width: auto;
+		background: none;
+		height: auto;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 0.5em;
+		text-align: center;
+
+	}
+
+	.navigation ul li {
+		/*float: left;*/
+		background: none;
+	}
+
+	.navigation ul li a{
+		color: white;
+		background: none;
+		padding: 1em 0;
+		margin: 0 1em; 
+	}
+
+	.navigation ul li a:hover{
+		color: #23424A;
+		background: none;
+	}
+
+}	
+
+@media (min-width: 1030px){
+	.apt-no{
+		margin-left: 40%;
+	}
+}
